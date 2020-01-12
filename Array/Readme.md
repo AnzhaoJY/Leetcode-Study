@@ -13,3 +13,4 @@ HashMap<Integer, Integer> store = new HashMap<Integer, Integer>(); 【类型，C
 
 1. 多多运用hashmap的方便之处。
 2. “modifying the input array in-place with O(1) extra memory.” 注意memory的space complexity的使用。
+3. Binary Search 里面的临界值的界定，大于等于以及小于的界定需要仔细考虑，数字会落在哪一边。
