@@ -6,7 +6,7 @@
 高频率的method
 
 .length
-int[] array = new int[]{-1,-1};
+int[] array = new int[]{-1,-1};\n
 HashMap<Integer, Integer> store = new HashMap<Integer, Integer>(); 【类型，Character,String自己选】
 
 知识点&易错点
