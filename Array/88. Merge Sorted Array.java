@@ -1,19 +1,18 @@
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        if (nums1[0] == 0 && m == 0) {
-            for (int i = 0; i < n ; i++) nums1[i] = nums2[i];
-        } else {            
-            for (int i = n + m - 1, j = n - 1, k = m + n - 1 ; k >= 0 && j >= 0 && i >= 0; k--) {
-                if (i - n >= 0 && nums1[i - n] >= nums2[j]) {
-                    nums1[k] = nums1[i - n];
-                    nums1[i - n] = 0;
-                    i--;
-                }
-                else {
-                    nums1[k] = nums2[j];
-                    j--;
-                }
+        int i = m - 1, j = n - 1, k = m + n - 1 ;
+        //i j is for iterating nums, k is a pointer to iterate from end to head in nums1
+        while (k >= 0 && j >= 0) {//start from right to left and put the nums in
+            if (i >= 0 && nums1[i] >= nums2[j]) {//if nums1 is empty but nums2 is not
+                nums1[k] = nums1[i];
+                nums1[i] = 0;//zero the position after move it
+                i--;
             }
+            else {
+                nums1[k] = nums2[j];
+                j--;
+            }
+            k--;
         }
     }
 }
