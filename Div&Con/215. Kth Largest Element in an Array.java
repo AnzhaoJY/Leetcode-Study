@@ -20,4 +20,4 @@ class Solution {
     }
 }
 
-its runtime is depend on the range, still need development.
+its runtime is depend on the range, still need development.if the range is continues, then the rumtime should be O(n).
