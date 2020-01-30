@@ -1,15 +1,15 @@
-String类型的题目要点总结：
+【String类型的题目要点总结】
 
 1. 不同类型的转化，例如int，char转string的方法。
 2. 学会for加上charAt的使用来依次遍历string的每一个char。
 3. 学会理解ASCII code的含义以及合理应用。
 4. 学会合理使用for loop以及双指针的一些理解。
 
-高频率method：
+【高频率method】
 
 .trim(), .length(), Integer.toString(), charAt(int)
 
-易错点：
+【易错点】
 
 1. char c = 0; 表示char为null
 2. String s = ""; 表示string为空
